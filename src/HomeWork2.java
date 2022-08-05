@@ -2,7 +2,7 @@ public class HomeWork2 {
     public static void main(String[] args) {
         int countWords = wordsCount(" #45 Java. New day to explore! /// ");
         System.out.println(countWords);
-        boolean isPalindrome = isPalindrome("Tenet");
+        boolean isPalindrome = isPalindrome("WTeNetw");
         System.out.println(isPalindrome);
     }
 
@@ -16,7 +16,7 @@ public class HomeWork2 {
     }
 
     public static boolean isPalindrome(String str) {
-        char[] stringToChar = new char[str.length()];
+        char[] stringToChar = str.toLowerCase().toCharArray();
         int i = 0;
         int j = str.length() - 1;
         while (i < j) {
@@ -25,7 +25,7 @@ public class HomeWork2 {
             }
             i++;
             j--;
-        }
-        return true;
+        } return true;
     }
 }
+
